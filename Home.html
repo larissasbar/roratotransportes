@@ -1,0 +1,459 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rorato Transportes</title>
+</head>
+
+<body>
+	<script>
+	function JSready(e){(document.attachEvent?"complete"===document.readyState:"loading"!==document.readyState)?e():document.addEventListener("DOMContentLoaded",e)}
+	function JSfadeIn(element,time){JSfadeProcessa(element,time,0,100);}
+	function JSfadeOut(element,time){JSfadeProcessa(element,time,100,0);}
+	function JSfadeProcessa(e,t,n,c){0==n?(increment=2,e.style.display="block"):increment=-2,opc=n,intervalo=setInterval(function(){opc==c?(0==c&&(e.style.display="none"),clearInterval(intervalo)):(opc+=increment,e.style.opacity=opc/100,e.style.filter="alpha(opacity="+opc+")")},10*t)}
+	JSready( function() {JSfadeOut( document.getElementById('fakeLoader'),0.3);});
+	</script>
+	<style>
+		@keyframes gira { to { transform: rotate(360deg);}}.horario{ animation: gira 2s linear infinite; }
+	</style>
+	<div id = "fakeLoader" style="overflow: hidden; position: fixed; top: 0px; left: 0px; width: 100%; height: 100vh; z-index: 100000; background-color: rgb(255, 255, 255); opacity: 0; display: none;">
+	<img src="img/zd-inventory-loader.gif" class="horario" style="position: absolute; top: calc( ( 100vh - 80px )/2);left: calc( ( 100% - 80px ) /2 );" alt="Carregando">
+	</div>
+	
+	<header>
+	<nav class="navbar navbar-default navbar-fixed-top" style="box-shadow: 0px 0px 4px #cccccc;">
+		<div class="container1">
+		<div class="Conjunto">
+			<div class="navbar_header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="menu">Navegation</span>
+				<span class="icon_bar"></span>
+				<span class="icon_bar"></span>
+				<span class="icon_bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="www.roratotransportes.com.br/">
+				<img class="logotipo_variavel transicao" src="img/Logo.png" alt="Rorato Transportes" style="height: 50px">
+				</a>
+				
+				</div>
+			
+			
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-left" style>
+					<li class="active">
+					<a href="Home.html" title="menu_superior">HOME</a>
+					</li>
+					<li class=" ">
+					<a href="Empresa.html" title="menu_superior">EMPRESA</a>
+					</li>
+					<li class=" ">
+					<a href="Serviços.html" title="menu_superior">SERVIÇOS</a>
+					</li>
+					<li class=" ">
+					<a href="Contato.html" title="menu_superior">CONTATO</a>
+					</li>
+					</ul>
+				</div>
+		
+			</div>
+		
+		</div>
+			 
+		</nav>
+	</header>
+	
+	<div id="banner_carousel_responsivo">
+		<div id="carousel-banner-home" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner" role="listbox">
+			<div class="item">
+			<picture>
+				<img src="img/final3.png" media="(max-width: 768px)">
+				<img src="img/final3.png">
+				<img src="img/final3.png" alt="1" style="width:100%">
+				</picture>
+			
+			<div class="carousel-caption">
+				<style>
+					
+						.content {
+							height: 100%;
+							width: 100%;
+							display: flex;
+							flex-wrap: wrap;
+							align-items: center;
+							justify-content: flex-end;
+						}
+
+						.content-inner {
+							width: 55%;
+							color: #fff;
+							display: flex;
+							flex-direction: column;
+							align-items: baseline;
+						}
+
+						.content-inner h2 {
+							color: #fff;
+						text-align: left;
+						margin-bottom: 15px;
+						}
+
+						p {
+							margin-bottom: 10px;
+							text-align: left;
+						}
+
+						@media (max-width: 991px) {
+						.content {
+							justify-content: flex-start;
+						}
+
+						.content-inner {
+							width: 100%;
+						}
+						}
+				</style>
+				<div class="content">
+				<div class="content-inner">
+					<h2 class="fonte_especial"> Rorato Transportes</h2>
+					<p>
+					#juntosnaestrada
+					</p>
+					<a href="Empresa.html">
+					<button type="button" class="button1"> SAIBA MAIS</button>
+					</a>
+					</div>
+				</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			<div class="item">
+			<picture>
+				<img src="img/final-1.png" media="(max-width: 768px)">
+				<img src="img/final-1.png">
+				<img src="img/final-1.png" alt="2" style="width:100%">
+				</picture>
+			<div class="carousel-caption">
+			<div class="content">
+				<div class="content-inner">
+					<h2 class="fonte_especial"> Rorato Transportes</h2>
+					<p>
+					#juntosnaestrada
+					</p>
+			</div>
+			</div>
+		</div>
+			</div>
+		
+			
+			<div class="item active">
+			<picture>
+				<img src="img/final - 2.png" media="(max-width: 768px)">
+				<img src="img/final - 2.png">
+				<img src="img/final - 2.png" alt="3" style="width:100%">
+				</picture>
+				<div class="carousel-caption">
+				<div class="content">
+				<div class="content-inner">
+					<h2 class="fonte_especial"> Rorato Transportes</h2>
+					<p>
+					#juntosnaestrada
+					</p>
+					<a href="Contato.html">
+					<button type="button" 	class="button2">SAIBA MAIS</button>
+					</a>
+			</div>
+			</div>
+		</div>
+			
+			</div>
+			
+			<ol class="carousel-indicators">
+			<li data-target="##carousel-banner-home" data-slide-to="0" class="active"></li>
+			<li data-target="##carousel-banner-home" data-slide-to="0" class="active"></li>
+			<li data-target="##carousel-banner-home" data-slide-to="0" class="active"></li>
+			</ol>
+			
+			<a class="left carousel-control transicao" href="#carousel_banner_home" role="button" data-slide="prev">
+			<span><</span>
+			<span class="sr_only">Previous</span>
+			</a>
+			
+			<a class="left carousel-control transicao" href="#carousel_banner_home" role="button" data-slide="next">
+			<span> > </span>
+			<span class="sr_only">Next</span>
+				</a>
+			</div>
+			</div>
+			
+			<style>
+				
+        .segmentos-titulo {
+            padding-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    
+        .segmentos-titulo::before {
+            content: '';
+            height: 2px;
+            width: 100%;
+            background-color: #cacaca;
+            display: block;
+            margin-bottom: 50px;
+        }
+    
+        .seg-titulo h2 {
+            font-size: 2em;
+            color: #122f57;
+            word-wrap: normal;
+            word-break: normal;
+        }
+    
+        .seg-texto p {
+            color: #575757;
+        }
+    
+        .segmentos {
+            padding: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    
+    
+        .seg-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            border-radius: 50%;
+            transition: 300ms ease-in;
+        }
+    
+        .seg-wrapper:hover {
+            background-color: #122f57;
+        }
+    
+        .seg-wrapper h2 {
+            position: absolute;
+            z-index: 9999;
+            font-size: .9em;
+            color: #fff;
+            visibility: hidden;
+        }
+    
+        .seg-wrapper:hover>h2 {
+            visibility: visible;
+        }
+    
+        .seg-wrapper:hover>img {
+            visibility: hidden;
+        }
+    
+        .seg-wrapper img {
+            width: 100px;
+        }
+    
+        .seg-texto {
+            padding-bottom: 50px;
+        }
+    
+        @media (max-width: 550px) {
+            .segmentos-titulo {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+    
+            .seg-titulo {
+                margin-bottom: 20px;
+            }
+        }
+    
+        @media (max-width: 630px) {
+            .seg-wrapper {
+                margin: 15px;
+            }
+        }
+			</style>
+			
+		<div class="container">
+			<div class="segmentos-titulo">
+			<div class="seg-titulo">
+				<h2 class="fonte_especial">SEGMENTOS</h2>
+				</div>
+			</div>
+			
+			<div class="segmentos">
+			<div class="seg">
+				<img src="img/carne1.jpg">
+				<h2 class="fonte_especial">CARNES</h2>
+				<img src="img/cesta.jpg">
+				<h2 class="fonte_especial">CESTA</h2>
+				<img src="img/cesta1.jpeg">
+				<h2 class="fonte_especial">ALIMENTOS</h2>
+				<img src="img/limpeza.jpeg">
+				<h2 class="fonte_especial">PRODUTOS DE LIMPEZA</h2>
+				<img src="img/papel.jpg">
+				<h2 class="fonte_especial">PAPEL</h2>
+				</div>
+			</div>
+			
+			<style>
+			
+        .contato-bg {
+            background: url(https://grupotombini.com.br/sistema1/arquivos/imagens/tombini/form-bg.webp);
+            background-position: bottom;
+            background-size: cover;
+            padding: 50px 0 100px 0;
+        }
+    
+        .c-titulo h2 {
+            font-size: 2.2em;
+            color: #fff;
+            margin-bottom: 25px;
+            word-wrap: normal;
+            word-break: normal;
+        }
+    
+        .contato {
+            display: flex;
+            flex-direction: column;
+            max-width: 40%;
+        }
+    
+        form#form_104 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    
+        #form_104 .form-control {
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding: 6px 18px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            background-color: #fff;
+            background-image: none;
+            border: 0px solid #ccc;
+            border-radius: 50px;
+            margin-bottom: 15px;
+        }
+    
+        #form_104 select {
+            color: #999;
+            -webkit-appearance: none;
+        }
+    
+        #form_104 .text-area {
+            min-height: 150px;
+            resize: none;
+            border-radius: 15px;
+        }
+    
+        .buttons-row {
+            display: flex;
+            max-width: 200px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+    
+        .buttons-row button {
+            margin-bottom: 15px;
+        }
+    
+        #form_104 textarea {
+            resize: none;
+        }
+    
+        @media (max-width: 767px) {
+            .contato {
+                max-width: 100%;
+            }
+        }
+			</style>
+			
+			
+			<div class="contato_backgorund">
+			<div class="container">
+				<div class="contato">
+				<div class="c-titulo">
+					<h2 class="fonte_especial">CONTATO</h2>
+					</div>
+					
+					<div class="form">
+					<form id="form1" method="post">
+						<input type="text" name="nome" class="form_control" maxlength="50" placeholder="Nome">
+						<input type="text" name="email" class="form_control" maxlength="50" placeholder="E-mail">
+						<input type="tel" name="tel" class="form_control" maxlength="16" placeholder="Telefone">
+						<textarea name="menagem" class="form-control text-area" placeholder="Mensagem"></textarea>
+						
+						<div class="buttons-row">
+						<button type="submit" class="button2">ENVIAR</button>
+							<a href="Contato.html">
+							<button type="button" class="button3">TRABALHE CONOSCO</button>
+							</a>
+						</div>
+						</form> 
+					<script type="application/javascript">
+						
+JSready( function() {
+	
+$("#form_104").submit(function(e) { e.preventDefault();	
+	if (validaFormulario104()) sendFormulario104(); });
+	
+function sendFormulario104() {
+	serializeDados = $("#form_104").serialize(); serializeDados+="&form_id=form_104";
+	$("#form_104").find("input,textarea,select,button").prop("disabled", true);
+	a = $("#form_104").find(":submit").html();
+	$("#form_104").find(":submit").html("<span class='loader_form loader_quart'></span>");
+	
+	$.ajax({ 
+        url: "https://grupotombini.com.br/sistema1/envia.php?send=101",
+		data: serializeDados, 
+		type:"POST",
+		dataType:"html",
+		success:function(data){ dados = JSON.parse(data); 
+		   if (dados[0]==0) { window.location.href = "home";}
+		else  { alert(dados[1]); $("#form_104").find("input,textarea,select,button").prop("disabled", false); $("#form_104").find(":submit").html(a);} 
+		}
+			
+		});
+}
+function validaFormulario104() { 
+frase="";
+if ($("#form_104").find('input[name ="email"]').length>0) { 
+if (!validaEmail($("#form_104").find('input[name ="email"]').val())) frase="Digite um email válido"; }
+if ($("#form_104").find('input[name ="nome"]').length>0) { 
+if ($("#form_104").find('input[name ="nome"]').val().length<3) frase=frase + "\nDigite seu nome completo"; }
+if ($("#form_104").find('input[name ="fone"]').length>0) {
+if ($("#form_104").find('input[name ="fone"]').val().length<8) frase=frase + "\nDigite seu telefone com DDD"; }
+if (frase!="") {frase="Alguns campos precisam de atenção!\n\n" + frase; alert(frase); return false;} else return true;}
+});
+						
+						</script>
+					</div>
+				
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			
+			
+	</div>
+</body>
+</html>
